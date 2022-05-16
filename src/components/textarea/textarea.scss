@@ -1,0 +1,26 @@
+.x-container {
+  border-bottom: 1px solid var(--main-bg);
+  width: 100%;
+  height: auto;
+  background: transparent;
+
+  transition: all 0.5s;
+  &:hover {
+    border-color: var(--main-color-green);
+  }
+
+  > textarea {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--box-shadow);
+    border: none;
+    padding: 4px 11px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    display: inline-block;
+    background: transparent;
+  }
+}

@@ -1,0 +1,61 @@
+// Header Part
+.llc-header {
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    a {
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.65;
+        }
+
+        &:active {
+          opacity: 0.85;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    > button {
+      > svg {
+        width: 30px;
+        height: 30px;
+        color: slategrey;
+      }
+    }
+
+    .notification {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: var(--hover-color-green);
+      > span {
+        color: var(--txt-white);
+      }
+
+      &:active {
+        background-color: var(--second-color-green);
+      }
+    }
+  }
+}
